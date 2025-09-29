@@ -22,11 +22,14 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl">
-                Schedule a Pickup
-              </Button>
-              <Button variant="outline" size="xl">
-                Get a Quote
+              <Button
+                variant="hero"
+                size="xl"
+                asChild
+              >
+                <a href="tel:+2349127052281">
+                  Place a Call
+                </a>
               </Button>
             </div>
             
@@ -41,7 +44,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="w-5 h-5 text-fresh-green" />
-                <span className="text-sm font-medium">Free Pickup & Delivery</span>
+                <span className="text-sm font-medium"> Pickup & Delivery</span>
               </div>
             </div>
           </div>

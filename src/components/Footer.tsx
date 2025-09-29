@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Mail, Facebook, Instagram, Twitter } from "lucide-react";
 
+const getCurrentYear = () => new Date().getFullYear();
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -25,7 +27,7 @@ const Footer = () => {
               <li><a href="#services" className="text-primary-foreground/80 hover:text-white transition-colors">Services</a></li>
               <li><a href="#about" className="text-primary-foreground/80 hover:text-white transition-colors">About Us</a></li>
               <li><a href="#contact" className="text-primary-foreground/80 hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors">Pricing</a></li>
+              {/* <li><a href="#" className="text-primary-foreground/80 hover:text-white transition-colors">Pricing</a></li> */}
             </ul>
           </div>
           
@@ -45,35 +47,41 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4" />
-                <span className="text-primary-foreground/80">+234 800 123 4567</span>
+                <span className="text-primary-foreground/80">+2349127052281</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4" />
-                <span className="text-primary-foreground/80">123 Clean Street, Lagos</span>
+                <span className="text-primary-foreground/80">17 King Perekule, GRA Phase 2, Port-Harcourt</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
-                <span className="text-primary-foreground/80">contact@launderland.ng</span>
+                <span className="text-primary-foreground/80">launderlandph@gmail.com</span>
               </div>
             </div>
             
             <div className="flex space-x-2 mt-4">
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-white/10">
-                <Facebook className="w-4 h-4" />
-              </Button>
+              <a href="https://www.facebook.com/share/1AwJahbjSC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-white/10">
+                  <Facebook className="w-4 h-4" />
+                </Button>
+              </a>
+              <a href="https://www.instagram.com/launderlandng?igsh=MWF6Ymd0czE3N2d3Zw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-white/10">
                 <Instagram className="w-4 h-4" />
               </Button>
+              </a>
+              <a href="https://x.com/launderlandng?s=21&t=cZDSg25lgTuXdx9PWuSUUg" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-white/10">
                 <Twitter className="w-4 h-4" />
               </Button>
+              </a>
             </div>
           </div>
         </div>
         
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
           <p className="text-primary-foreground/80">
-            © 2024 LaunderLand. All rights reserved. | Professional Dry Cleaning & Laundry Services
+            © {getCurrentYear()} LaunderLand. All rights reserved. | Professional Dry Cleaning & Laundry Services
           </p>
         </div>
       </div>
