@@ -1,12 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   return (
     <header className="bg-clean-white border-b border-border shadow-sm">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          {/* <h1 className="text-2xl font-bold text-foreground">LaunderLand</h1> */}
+          <a href="#" className="flex items-center space-x-2">
+            <img src={logo} alt="LaunderLand logo" className="h-12 md:h-16 lg:h-20 w-auto" />
+            {/* <span className="sr-only">LaunderLand</span> */}
+          </a>
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
