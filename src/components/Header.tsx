@@ -8,7 +8,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <a href="#" className="flex items-center space-x-2">
-            <img src={logo} alt="LaunderLand logo" className="h-12 md:h-16 lg:h-20 w-auto" />
+            <img src={logo} alt="LaunderLand logo" className="h-16 md:h-20 lg:h-24 w-auto" />
             {/* <span className="sr-only">LaunderLand</span> */}
           </a>
         </div>
