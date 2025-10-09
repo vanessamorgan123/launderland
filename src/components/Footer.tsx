@@ -9,12 +9,12 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
+            {/*<div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
                 <span className="text-primary font-bold text-xl">L</span>
               </div>
               <h3 className="text-2xl font-bold">LaunderLand</h3>
-            </div>
+            </div>*/}
             <p className="text-primary-foreground/80 leading-relaxed">
               Professional dry cleaning and laundry services with eco-friendly practices 
               and exceptional customer care.
