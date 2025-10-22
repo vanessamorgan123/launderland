@@ -30,8 +30,8 @@ const Services = () => {
     {
       icon: Truck,
       title: "Pickup & Delivery",
-      description: "Convenient free pickup and delivery service right to your doorstep.",
-      features: ["Free service", "Scheduled pickups", "Same-day delivery"]
+      description: "Convenient  pickup and delivery service right to your doorstep.",
+      features: ["Reliable service", "Scheduled pickups", "Same-day delivery"]
     }
   ];
 
