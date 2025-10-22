@@ -51,7 +51,13 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold text-foreground">launderlandph@gmail.com</p>
+                {/* <p className="text-lg font-semibold text-foreground">launderlandph@gmail.com</p> */}
+                <a 
+                  href="mailto:launderlandph@gmail.com" 
+                  className="text-lg font-semibold text-foreground hover:text-primary transition-colors duration-200"
+                >
+                  launderlandph@gmail.com
+                </a>
                 <p className="text-muted-foreground">Email us anytime</p>
               </CardContent>
             </Card>

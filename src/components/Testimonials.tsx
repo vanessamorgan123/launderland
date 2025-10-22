@@ -5,19 +5,19 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Sarah Johnson",
-      location: "Victoria Island",
+      location: "Port-Harcourt",
       text: "LaunderLand has been a lifesaver! Their pickup and delivery service is so convenient, and my clothes always come back perfectly clean and pressed.",
       rating: 5
     },
     {
       name: "Michael Adebayo",
-      location: "Lekki",
+      location: "Port-Harcourt",
       text: "I've been using LaunderLand for my business suits for over a year. The quality is exceptional and they always meet their promised deadlines.",
       rating: 5
     },
     {
       name: "Emma Williams",
-      location: "Ikeja",
+      location: "Port-Harcourt",
       text: "The eco-friendly approach and attention to detail sets LaunderLand apart. They've restored clothes I thought were ruined forever!",
       rating: 5
     }
