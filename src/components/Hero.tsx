@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
-import heroImage from "@/assets/hero-laundry.jpg";
+import heroImage from "@/assets/hero-3.jpeg";
 
 const Hero = () => {
   return (
@@ -54,7 +54,7 @@ const Hero = () => {
               <img 
                 src={heroImage} 
                 alt="Professional dry cleaning and laundry services" 
-                className="w-full h-[600px] object-cover"
+                className="w-full h-[600px] object-contain bg-gray-100"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
             </div>
