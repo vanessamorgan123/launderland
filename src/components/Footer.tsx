@@ -16,8 +16,11 @@ const Footer = () => {
               <h3 className="text-2xl font-bold">LaunderLand</h3>
             </div>*/}
             <p className="text-primary-foreground/80 leading-relaxed">
-              Professional dry cleaning and laundry services with eco-friendly practices 
-              and exceptional customer care.
+              {/*Professional dry cleaning and laundry services with eco-friendly practices 
+              and exceptional customer care.*/}
+              Launderland provides professional, eco-friendly dry cleaning and laundry services 
+              with exceptional care, precision, and a commitment to quality and customer satisfaction—keeping 
+              your wardrobe looking its best.
             </p>
           </div>
           
@@ -81,7 +84,7 @@ const Footer = () => {
         
         <div className="border-t border-primary-foreground/20 pt-8 text-center">
           <p className="text-primary-foreground/80">
-            © {getCurrentYear()} LaunderLand. All rights reserved. | Professional Dry Cleaning & Laundry Services
+            © {getCurrentYear()} Launderland Dry-Cleaning Services LTD | All rights reserved.
           </p>
         </div>
       </div>

@@ -38,8 +38,16 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold text-foreground">17 King Perekule, GRA Phase 2, Port-Harcourt</p>
-                <p className="text-muted-foreground">Port-Harcourt, Nigeria</p>
+                <div className="space-y-3">
+                  <div>
+                    <p className="text-lg font-semibold text-foreground">17 King Perekule, GRA Phase 2, Port-Harcourt</p>
+                    <p className="text-muted-foreground">Port-Harcourt, Nigeria</p>
+                  </div>
+                  <div>
+                    <p className="text-lg font-semibold text-foreground">118B LNG By Pass, By Amadi Ama Roundabout, Amadi Ama</p>
+                    <p className="text-muted-foreground">Port-Harcourt, Nigeria</p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
             

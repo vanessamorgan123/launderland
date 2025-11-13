@@ -1,8 +1,40 @@
+import { useEffect, useState } from "react";
+
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
-import heroImage from "@/assets/hero-3.jpeg";
+import heroImagePrimary from "@/assets/hero-3.jpeg";
+import heroImageSecondary from "@/assets/hero-2.jpeg";
+import heroImageLaundry from "@/assets/hero-laundry.jpg";
+
+const HERO_IMAGES = [
+  {
+    src: heroImagePrimary,
+    alt: "Professional dry cleaning and laundry services",
+  },
+  {
+    src: heroImageSecondary,
+    alt: "Friendly staff folding freshly laundered clothes",
+  },
+  {
+    src: heroImageLaundry,
+    alt: "Laundry machines prepared for garment care",
+  },
+] as const;
+
+const SLIDE_INTERVAL_MS = 5000;
 
 const Hero = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(
+      () => setCurrentSlide((prev) => (prev + 1) % HERO_IMAGES.length),
+      SLIDE_INTERVAL_MS,
+    );
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-section">
       <div className="container mx-auto px-4 py-20">
@@ -51,12 +83,20 @@ const Hero = () => {
           
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-hero">
-              <img 
-                src={heroImage} 
-                alt="Professional dry cleaning and laundry services" 
-                className="w-full h-[600px] object-contain bg-gray-100"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+              <div className="relative h-[420px] sm:h-[520px] lg:h-[600px] bg-gray-100">
+                {HERO_IMAGES.map((image, index) => (
+                  <img
+                    key={image.src}
+                    src={image.src}
+                    alt={image.alt}
+                    className={`absolute inset-0 h-full w-full object-contain object-top transition-opacity duration-1000 ease-in-out ${
+                      index === currentSlide ? "opacity-100" : "opacity-0"
+                    }`}
+                    aria-hidden={index !== currentSlide}
+                  />
+                ))}
+              </div>
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: Leaf,
       title: "Eco-Friendly",
-      description: "We use only environmentally safe detergents and processes that protect both your clothes and the planet."
+      description: "We use only environmentally safe detergents and processes that protect your clothes."
     },
     {
       icon: Clock,
@@ -34,7 +34,7 @@ const About = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             At LaunderLand, we're committed to delivering exceptional dry cleaning and laundry services 
-            that combine convenience, quality, and environmental responsibility. Trust us to keep your 
+            that combine convenience and quality. Trust us to keep your 
             clothes looking their absolute best.
           </p>
         </div>
