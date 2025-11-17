@@ -49,7 +49,10 @@ const Services = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="border-border hover:shadow-card transition-all duration-300 transform hover:scale-105 bg-clean-white">
+            <Card
+              key={index}
+              className="border-border hover:shadow-card transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.01] bg-clean-white"
+            >
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
                   <service.icon className="w-8 h-8 text-white" />
@@ -62,7 +65,10 @@ const Services = () => {
                 </p>
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
+                    <li
+                      key={featureIndex}
+                      className="flex items-center text-sm text-muted-foreground"
+                    >
                       <div className="w-2 h-2 bg-fresh-green rounded-full mr-3"></div>
                       {feature}
                     </li>

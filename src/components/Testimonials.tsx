@@ -6,19 +6,19 @@ const Testimonials = () => {
     {
       name: "Sarah Johnson",
       location: "Port-Harcourt",
-      text: "LaunderLand has been a lifesaver! Their pickup and delivery service is so convenient, and my clothes always come back perfectly clean and pressed.",
+      text: "Launderland has been a lifesaver! Their pickup and delivery service is so convenient, and my clothes always come back perfectly clean and pressed.",
       rating: 5
     },
     {
       name: "Michael Adebayo",
       location: "Port-Harcourt",
-      text: "I've been using LaunderLand for my business suits for over a year. The quality is exceptional and they always meet their promised deadlines.",
+      text: "I've been using Launderland for my business suits for over a year. The quality is exceptional and they always meet their promised deadlines.",
       rating: 5
     },
     {
       name: "Emma Williams",
       location: "Port-Harcourt",
-      text: "The eco-friendly approach and attention to detail sets LaunderLand apart. They've restored clothes I thought were ruined forever!",
+      text: "The eco-friendly approach and attention to detail sets Launderland apart. They've restored clothes I thought were ruined forever!",
       rating: 5
     }
   ];
