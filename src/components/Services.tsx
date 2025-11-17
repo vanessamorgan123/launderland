@@ -1,4 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Shirt, Droplets, Zap, Scissors, Truck } from "lucide-react";
 
 const Services = () => {
@@ -6,32 +5,27 @@ const Services = () => {
     {
       icon: Shirt,
       title: "Dry Cleaning",
-      description: "Professional dry cleaning for delicate fabrics, suits, dresses, and specialty garments.",
-      features: ["Stain removal", "Fabric protection", "Professional pressing"]
+      description: "Professional dry cleaning for delicate fabrics and premium garments."
     },
     {
       icon: Droplets,
       title: "Laundry Washing & Folding",
-      description: "Complete wash, dry, and fold service for your everyday clothing and linens.",
-      features: ["Eco-friendly detergents", "Fabric softeners", "Neat folding"]
+      description: "Thorough wash, dry, and neatly folded laundry using eco-friendly detergents for everyday freshness."
     },
     {
       icon: Zap,
       title: "Ironing & Pressing",
-      description: "Expert ironing and pressing services to keep your clothes crisp and professional.",
-      features: ["Steam pressing", "Crease removal", "Professional finish"]
+      description: "Precision ironing and steam-pressing to keep your clothes crisp, smooth, and professionally finished."
     },
     {
       icon: Scissors,
       title: "Alterations & Repairs",
-      description: "Skilled tailoring services for perfect fits and garment repairs.",
-      features: ["Hemming", "Sizing adjustments", "Tear repairs"]
+      description: "Skilled tailoring and garment adjustments to restore perfect fit, comfort, and style."
     },
     {
       icon: Truck,
       title: "Pickup & Delivery",
-      description: "Convenient  pickup and delivery service right to your doorstep.",
-      features: ["Reliable service", "Scheduled pickups", "Same-day delivery"]
+      description: "Convenient door-to-door laundry service."
     }
   ];
 
@@ -49,33 +43,24 @@ const Services = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card
+            <div
               key={index}
-              className="border-border hover:shadow-card transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.01] bg-clean-white"
+              className="service-card"
             >
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-gradient-hero rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="service-inner">
+                <div className="service-front">
+                  <div className="service-icon">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-xl text-foreground">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="pt-0">
-                <p className="text-muted-foreground text-center mb-4 leading-relaxed">
-                  {service.description}
-                </p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, featureIndex) => (
-                    <li
-                      key={featureIndex}
-                      className="flex items-center text-sm text-muted-foreground"
-                    >
-                      <div className="w-2 h-2 bg-fresh-green rounded-full mr-3"></div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+                  <h3 className="text-xl font-semibold text-foreground">{service.title}</h3>
+                </div>
+                <div className="service-back">
+                  <p className="text-base text-foreground leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>

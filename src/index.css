@@ -125,3 +125,57 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .service-card {
+    perspective: 1200px;
+  }
+
+  .service-inner {
+    position: relative;
+    height: 100%;
+    min-height: 320px;
+    border-radius: 1rem;
+    border: 1px solid hsl(var(--border));
+    background-color: hsl(var(--clean-white));
+    box-shadow: var(--shadow-card);
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+  }
+
+  .service-card:hover .service-inner {
+    transform: rotateY(180deg) translateY(-4px) scale(1.01);
+  }
+
+  .service-front,
+  .service-back {
+    position: absolute;
+    inset: 0;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.25rem;
+    backface-visibility: hidden;
+  }
+
+  .service-front {
+    transform: rotateY(0deg);
+  }
+
+  .service-back {
+    transform: rotateY(180deg);
+  }
+
+  .service-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    background: var(--gradient-hero);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
