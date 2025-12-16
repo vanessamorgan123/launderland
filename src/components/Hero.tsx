@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import heroImagePrimary from "@/assets/hero-3.jpeg";
-import heroImageSecondary from "@/assets/hero-2.jpeg";
-import heroImageLaundry from "@/assets/hero-laundry.jpg";
+import heroImageSecondary from "@/assets/hero-5.jpeg";
+import heroImageThird from "@/assets/hero-7.jpeg";
 
 const HERO_IMAGES = [
   {
@@ -16,7 +16,7 @@ const HERO_IMAGES = [
     alt: "Friendly staff folding freshly laundered clothes",
   },
   {
-    src: heroImageLaundry,
+    src: heroImageThird,
     alt: "Laundry machines prepared for garment care",
   },
 ] as const;
