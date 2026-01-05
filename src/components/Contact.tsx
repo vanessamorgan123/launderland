@@ -40,12 +40,28 @@ const Contact = () => {
               <CardContent>
                 <div className="space-y-3">
                   <div>
-                    <p className="text-lg font-semibold text-foreground">17 King Perekule, GRA Phase 2, Port-Harcourt</p>
-                    <p className="text-muted-foreground">Port-Harcourt, Nigeria</p>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=17%20King%20Perekule%2C%20GRA%20Phase%202%2C%20Port%20Harcourt"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open 17 King Perekule, GRA Phase 2, Port Harcourt in Google Maps"
+                      className="text-lg font-semibold text-primary hover:underline underline-offset-2 transition-colors duration-200"
+                    >
+                      17 King Perekule, GRA Phase 2, Port Harcourt
+                    </a>
+                    <p className="text-muted-foreground">Port Harcourt, Nigeria</p>
                   </div>
                   <div>
-                    <p className="text-lg font-semibold text-foreground">118B LNG By Pass, By Amadi Ama Roundabout, Amadi Ama</p>
-                    <p className="text-muted-foreground">Port-Harcourt, Nigeria</p>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=118B%20LNG%20By%20Pass%2C%20Amadi%20Ama%20Roundabout%2C%20Port%20Harcourt"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Open 118B LNG By Pass, Amadi Ama Roundabout, Port Harcourt in Google Maps"
+                      className="text-lg font-semibold text-primary hover:underline underline-offset-2 transition-colors duration-200"
+                    >
+                      118B LNG By Pass, Amadi Ama Roundabout, Port Harcourt
+                    </a>
+                    <p className="text-muted-foreground">Port Harcourt, Nigeria</p>
                   </div>
                 </div>
               </CardContent>
