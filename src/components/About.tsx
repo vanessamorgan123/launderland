@@ -41,7 +41,10 @@ const About = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="border-border hover:shadow-card transition-all duration-300 transform hover:scale-105">
+            <Card
+              key={index}
+              className="border-border hover:shadow-card transition-all duration-300 transform hover:scale-105"
+            >
               <CardContent className="p-6 text-center">
                 <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <feature.icon className="w-8 h-8 text-primary" />
@@ -55,6 +58,47 @@ const About = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-16">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+              Mission & Vision
+            </h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Learn more about what drives LaunderLand and how we aim to serve
+              our communities every day.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            <Card className="border-border shadow-sm hover:shadow-card transition-shadow duration-300">
+              <CardContent className="p-6 md:p-8">
+                <h4 className="text-xl font-semibold text-foreground mb-3">
+                  Mission
+                </h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  To provide reliable, high-quality laundry and dry cleaning
+                  services that make life easier for our customers, using modern
+                  equipment, eco-friendly processes, and a commitment to
+                  excellent customer care.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-border shadow-sm hover:shadow-card transition-shadow duration-300">
+              <CardContent className="p-6 md:p-8">
+                <h4 className="text-xl font-semibold text-foreground mb-3">
+                  Vision
+                </h4>
+                <p className="text-muted-foreground leading-relaxed">
+                  To become the most trusted and convenient laundry service
+                  provider in our communities, known for quality, speed, and
+                  outstanding customer satisfaction.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
