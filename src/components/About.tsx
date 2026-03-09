@@ -60,9 +60,9 @@ const About = () => {
           ))}
         </div>
 
-        <div className="mt-16">
+        <div className="mt-16 rounded-2xl bg-gray-50 py-12 px-4 md:px-8 lg:px-10">
           <div className="text-center mb-10">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
               Mission & Vision
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -71,10 +71,10 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            <Card className="border-border shadow-sm hover:shadow-card transition-shadow duration-300">
+          <div className="grid gap-8 md:gap-10 md:grid-cols-2">
+            <Card className="border-border rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-blue-500 bg-background">
               <CardContent className="p-6 md:p-8">
-                <h4 className="text-xl font-semibold text-foreground mb-3">
+                <h4 className="text-xl font-bold text-gray-900 mb-3">
                   Mission
                 </h4>
                 <p className="text-muted-foreground leading-relaxed">
@@ -86,9 +86,9 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-border shadow-sm hover:shadow-card transition-shadow duration-300">
+            <Card className="border-border rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-cyan-500 bg-background">
               <CardContent className="p-6 md:p-8">
-                <h4 className="text-xl font-semibold text-foreground mb-3">
+                <h4 className="text-xl font-bold text-gray-900 mb-3">
                   Vision
                 </h4>
                 <p className="text-muted-foreground leading-relaxed">
